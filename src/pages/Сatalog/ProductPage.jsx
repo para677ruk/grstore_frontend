@@ -11,7 +11,7 @@ const ProductPage = () => {
   const [cartMessage, setCartMessage] = useState('');
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/products/${id}`)
+    fetch(`http://https://grstore-backend.onrender.com/api/products/${id}`)
       .then(res => res.json())
       .then(setProduct);
   }, [id]);
