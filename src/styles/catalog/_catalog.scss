@@ -97,7 +97,7 @@
             @include laptop {
                 display: block;
                 position: fixed;
-                top: rem(800); 
+                top: rem(650); 
                 right: rem(16); 
                 z-index: 900; 
                 margin-bottom: 0; 
@@ -112,7 +112,7 @@
             @include mobile {
                 display: block;
                 position: fixed;
-                top: rem(700); 
+                top: rem(650); 
                 right: rem(16); 
                 z-index: 900; 
                 margin-bottom: 0;
