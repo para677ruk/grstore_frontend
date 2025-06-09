@@ -1,0 +1,112 @@
+@use 'helpers' as *;
+
+body {
+    @include fluid-text(16, 12);
+
+    font-family: var(--font-family-base);
+
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.h7,
+p,
+.p {
+    font-family: var(--font-family-base);
+    color: var(--color-dark);
+}
+
+// Логотип
+h1,
+.h1 {
+    @include fluid-text(24, 18);
+
+    font-weight: 400;
+}
+
+// Дефолт, использутеся в хедере
+h2,
+.h2 {
+    @include fluid-text(16, 14);
+
+    font-weight: 400;
+}
+
+// В загаловках на мэйн странице, в каталоге, в корзине
+h3,
+.h3 {
+    @include fluid-text(16, 14);
+
+    font-weight: 300;
+}
+
+// Цена в каталогах
+h4,
+.h4 {
+    @include fluid-text(16, 14);
+
+    font-weight: 200;
+}
+
+// В каталоге в загаловках сортировки
+h5,
+.h5 {
+    @include fluid-text(12, 10);
+
+    font-weight: 500;
+}
+
+// В каталоге в вариантах сортировки
+h6,
+.h6 {
+    @include fluid-text(12, 10);
+
+    font-weight: 400;
+}
+
+// Для подзаголовков на мэйн странице
+.h7 {
+    @include fluid-text(12, 10);
+
+    font-weight: 300;
+}
+
+// Fashion jeans
+p,
+.p {
+    @include fluid-text(12, 10);
+
+    font-weight: 200;
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    color: inherit;
+
+    text-decoration: none;
+}
+
+:focus-visible {
+    outline: rem(2) dashed var(--color-light);
+    outline-offset: rem(4);
+    transition-duration: 0s !important;
+} 

@@ -1,0 +1,172 @@
+@use '../helpers/' as *;
+
+.catalog {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: rem(200);
+
+    &-brands {
+        @include mobile {
+            display: none;
+        }
+
+        @include laptop {
+            display: none;
+        }
+
+        &-h5 {
+            padding-bottom: rem(12);
+        }
+
+        &-list {
+            display: grid;
+            gap: rem(12);
+        }
+    }
+
+    &-products {
+        padding-left: rem(115);
+        padding-right: rem(26);
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: rem(67);
+
+        @include laptop {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            padding-left: rem(10);
+            padding-right: rem(10);
+
+            gap: rem(10);
+        }
+
+        @include mobile {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            padding-left: rem(10);
+            padding-right: rem(10);
+
+            gap: rem(10);
+        }
+
+        &-item {
+            display: grid;
+            gap: rem(4);
+
+            img {
+                width: 100%;
+                max-width: rem(300);
+                height: rem(550);
+                padding-bottom: rem(8);
+
+                @include mobile {
+                    max-width: rem(200);
+                    height: rem(300);
+                }
+            }
+        }
+    }
+
+    &-sort {
+        @include mobile {
+            display: none;
+        }
+
+        @include laptop {
+            display: none;
+        }
+
+        &-h5 {
+            padding-bottom: rem(12);
+        }
+
+        &-items {
+            display: grid;
+            gap: rem(12);
+        }
+    }
+
+    &-filters {
+        &-burger {
+            display: none;
+
+            @include laptop {
+                display: block;
+                position: fixed;
+                top: rem(800); 
+                right: rem(16); 
+                z-index: 900; 
+                margin-bottom: 0; 
+                width: rem(100);
+                height: rem(40);
+                box-shadow: 0 0 rem(10) rgba(0, 0, 0, 0.2);
+
+                background-color: #fff;
+                border: none;
+            }
+
+            @include mobile {
+                display: block;
+                position: fixed;
+                top: rem(800); 
+                right: rem(16); 
+                z-index: 900; 
+                margin-bottom: 0;
+                width: rem(100);
+                height: rem(40);
+                box-shadow: 0 0 rem(10) rgba(0, 0, 0, 0.2);
+
+                background-color: #fff;
+                border: none;
+            }
+        }
+
+        &-mobile {
+            display: none;
+
+            @include laptop {
+                display: block;
+                position: fixed;
+                left: 0;
+                right: 0;
+                background: #fff;
+                z-index: 1000;
+                padding: rem(16);
+            }
+
+            @include mobile {
+                display: block;
+                position: fixed;
+                left: 0;
+                right: 0;
+                background: #fff;
+                z-index: 1000;
+                padding: rem(16);
+            }
+        }
+    }
+
+    &-filters-overlay {
+        display: none;
+
+        @include laptop {
+            display: block;
+            position: fixed;
+            z-index: 999;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.2); 
+        }
+
+        @include mobile {
+            display: block;
+            position: fixed;
+            z-index: 999;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.2); 
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@use 'helpers' as *;
+
+:root {
+    --color-light: #fff;
+    --color-dark: #000;
+    --color-accent: #717171;
+    --color-accent-2: #007aff;
+
+    --font-family-base: 'Inter', sans-serif;
+
+    --container-width: #{rem(1824)};
+    --container-padding-x: #{rem(16)};
+
+    --transition-duration: 0.2s;
+
+    @include laptop {
+        --container-width: #{rem(1340)};
+        --container-padding-x: #{rem(16)};
+    }
+}

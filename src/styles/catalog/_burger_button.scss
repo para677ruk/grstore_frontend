@@ -1,0 +1,28 @@
+@use '../helpers/' as *;
+
+.catalog{
+    &-filters {
+        &-mobile{
+            .h1{
+                padding-bottom: rem(10);
+            }
+            &-items{
+                display: grid;
+                gap: rem(10);
+
+                padding-bottom: rem(15);
+            }
+
+            &-brands{
+                display: grid;
+                gap: rem(5);
+
+                &-list{
+                    display: grid;
+                    gap: rem(10);
+                }
+            }
+
+        }
+    }
+}

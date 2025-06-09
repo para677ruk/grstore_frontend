@@ -1,0 +1,174 @@
+@use '../helpers/' as *;
+
+.order-page {
+    display: grid;
+    margin: 0 auto;
+    max-width: rem(1080);
+    width: 100%;
+
+    &-info {
+        .h2 {
+            font-weight: 600 !important;
+            padding-bottom: rem(16);
+        }
+
+        &-summary {
+            display: flex;
+            flex-direction: column;
+            gap: rem(8);
+        }
+
+        border-bottom: 1px solid var(--color-dark);
+        padding-bottom: rem(20);
+    }
+
+    &-form_all {
+        padding-top: rem(20);
+
+        display: flex;
+        gap: rem(56);
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+
+            gap: rem(20);
+        }
+
+        &-desc {
+            display: flex;
+            flex-direction: column;
+            gap: rem(8);
+
+            .h2 {
+                font-weight: 600 !important;
+            }
+        }
+
+        &-form {
+            display: flex;
+            flex-direction: column;
+            gap: rem(8);
+
+            @include mobile{
+                justify-content: center;
+                align-items: center;
+            }
+
+            &-name {
+                input {
+                    width: rem(608);
+
+                    @include mobile {
+                        width: rem(390);
+                    }
+                }
+            }
+
+            &-email {
+                input {
+                    width: rem(608);
+
+                    @include mobile {
+                        width: rem(390);
+                    }
+                }
+            }
+
+            &-phone {
+                input {
+                    width: rem(608);
+
+                    @include mobile {
+                        width: rem(390);
+                    }
+                }
+            }
+
+            &-accept {
+                padding-top: rem(8);
+            }
+        }
+
+        &-form-adress_all {
+            display: flex;
+            gap: rem(8);
+
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-adress {
+                input {
+                    width: rem(333);
+
+
+                    @include mobile {
+                        width: rem(390);
+                    }
+                }
+            }
+
+            &-city {
+                input {
+                    width: rem(267);
+
+                    @include mobile {
+                        width: rem(390);
+                    }
+                }
+            }
+        }
+
+        &-form-country_all {
+            display: flex;
+            gap: rem(8);
+
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-country {
+                &-input {
+                    width: rem(333);
+
+
+                    @include mobile {
+                        width: rem(390);
+                    }
+                }
+            }
+
+            &-postalCode {
+                input {
+                    width: rem(267);
+
+                    @include mobile {
+                        width: rem(390);
+                    }
+                }
+            }
+        }
+
+        button {
+            width: 100%;
+            background-color: var(--color-dark);
+            color: white;
+
+            text-decoration: none;
+            border: none;
+
+            height: rem(30);
+
+            margin-top: rem(20);
+        }
+
+        button:disabled {
+            background-color: rgb(127, 127, 127);
+        }
+    }
+
+    padding-bottom: rem(300);
+}

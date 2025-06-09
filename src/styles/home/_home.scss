@@ -1,0 +1,134 @@
+@use '../helpers/' as *;
+
+main {
+    padding-bottom: rem(131);
+
+    gap: rem(93);
+    display: flex;
+    justify-content: center;
+
+    /*
+    padding-left: rem(89);
+    padding-right: rem(89);
+    */
+
+    @include mobile {
+        padding-left: rem(16);
+        padding-right: rem(16);
+    }
+}
+
+.column1 {
+    max-width: 444px;
+
+    &-group1-home-title {
+        display: flex;
+    }
+}
+
+.column2 {
+    max-width: 629px;
+
+    &-group2-home-title {
+        display: flex;
+    }
+
+    &-group3-home-title {
+        display: flex;
+    }
+
+    &-group3-home {
+        padding-top: rem(35);
+    }
+
+}
+
+.column3 {
+    max-width: 483px;
+
+    &-group4-home-title {
+        display: flex;
+    }
+
+}
+
+.column1-group1-home-title,
+.column2-group2-home-title,
+.column2-group3-home-title,
+.column3-group4-home-title {
+
+    p,
+    h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    p {
+        padding-top: rem(8);
+        padding-right: rem(8);
+    }
+}
+
+// Эффект при наведении (по желанию)
+.img-wrapper img {
+
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); // плавная анимация
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.01);
+}
+
+// Медиазапрос для мобильных
+@include laptop{
+
+    .column1,
+    .column2,
+    .column3 {
+        max-width: 30%;
+    }
+
+    main {
+        gap: rem(32);
+    }
+}
+
+@include mobile {
+
+    .column1,
+    .column2,
+    .column3 {
+        max-width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+        gap: rem(32);
+        align-items: center;
+    }
+}
+
+.Animation_home {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(-60);
+
+    @include mobile {
+        margin-top: rem(0);
+    }
+
+    padding-bottom: rem(50);
+}
+
+main h1 {
+  transition: 
+    color 0.4s,
+    text-shadow 0.3s;
+}
+
+main h1:hover, 
+main h1:active {
+  color: #007aff;
+  text-shadow: 0 6px 24px rgba(0,0,0,0.18);
+}

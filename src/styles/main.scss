@@ -1,0 +1,19 @@
+@use 'normalize';
+@use 'fonts';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use 'blocks/header';
+@use 'blocks/button';
+@use 'blocks/icon';
+@use 'blocks/logo';
+@use 'blocks/footer';
+
+@use 'home/home';
+@use 'login/login';
+@use 'catalog/catalog';
+@use 'catalog/burger_button';
+@use 'catalog/product_page';
+@use 'cartpage/cartpage';
+@use 'orderpage/orderpage';
