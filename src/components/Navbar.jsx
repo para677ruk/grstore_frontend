@@ -8,7 +8,7 @@ import { HiOutlineMenu } from 'react-icons/hi'
 const navigation = [
   { name: "Каталог", href: "/catalog" },
   { name: "Корзина", href: "/cart" },
-  { name: "Избранные", href: "/" },
+  { name: "Избранные", href: "/favorites" },
   { name: "Выйти", action: "logout" },
 ];
 
