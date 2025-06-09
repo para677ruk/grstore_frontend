@@ -3,11 +3,11 @@ import App from "../App.jsx";
 import { Home } from "../pages/home/Home.jsx";
 import Login from "../components/Login.jsx";
 import Register from "../components/Register.jsx";
-import Catalog from "../pages/Catalog/Catalog.jsx";
-import ProductPage from "../pages/catalog/ProductPage.jsx";
+import ProductPage from "../pages/Сatalog/ProductPage.jsx";
 import CartPage from "../pages/cart/CartPage.jsx";
 import FavoritesPage from "../pages/favorites/Favorites.jsx";
 import OrderPage from "../pages/order/OrderPage.jsx";
+import Catalog from "../pages/Сatalog/Catalog.jsx";
 
 const router = createBrowserRouter([
     {
