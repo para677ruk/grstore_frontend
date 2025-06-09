@@ -12,7 +12,7 @@ const Catalog = () => {
 
   useEffect(() => {
     setLoading(true);
-    let url = 'http://https://grstore-backend.onrender.com/api/products?';
+    let url = 'https://grstore-backend.onrender.com/api/products?';
     if (brand) url += `brand=${brand}&`;
     if (sort) url += `sort=${sort}`;
     fetch(url)
