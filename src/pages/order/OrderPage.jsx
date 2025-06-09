@@ -23,7 +23,7 @@ const OrderPage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         // Отправка заказа на сервер
-        await fetch("http://localhost:5000/api/orders", {
+        await fetch("http://https://grstore-backend.onrender.com/api/orders", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
